@@ -1,2 +1,20 @@
+- shell:
+    -
+        command: "rm -f ~/.doom.d/packages.el ~/.doom.d/init.el ~/.doom.d/config.el"
+        stdin: true
+        stdout: true
+        stderr: true
+        description: Remove default packages.el template
+
 - link:
     ~/.doom.d/packages.el: .doom.d/packages.el
+    ~/.doom.d/init.el: .doom.d/init.el
+    ~/.doom.d/config.el: .doom.d/config.el
+
+- shell:
+    -
+        command: "~/.emacs.d/bin/doom sync"
+        stdin: true
+        stdout: true
+        stderr: true
+        description: Remove default packages.el template

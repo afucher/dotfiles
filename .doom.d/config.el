@@ -20,7 +20,8 @@
   (setq projectile-project-search-path '("~/dev/"
                                          "~/dev/moonshots/"
                                          "~/dev/nu/"
-                                         "~/dev/nu/mini-meta-repo/packages/")
+                                         "~/dev/nu/mini-meta-repo/packages/"
+                                         "-node_modules")
 
         ;; Disable caching so I don't have to remember to update the known projects list from time to time
         projectile-enable-caching nil
